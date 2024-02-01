@@ -1,0 +1,25 @@
+[package]
+authors    =["Thor Kampefner <thorck@pm.me>"]
+description="""play w ollama"""
+edition    ="2021"
+
+name      ="ollama"
+repository="https://github.com/thor314/ollama"
+version   ="0.1.0"
+
+[dependencies]
+anyhow="1.0"
+log   ="0.4"
+
+thiserror ="1.0"
+env_logger="0.11"
+dotenv    ="0.15"
+
+[dev-dependencies]
+
+criterion="0.5"
+rstest   ="0.18" # testing convenience proc-macros
+
+arbitrary        ={ version="1.1", features=["derive"] } # see quickcheck
+quickcheck       ="1.0"                                  # lowkey proptest suite
+quickcheck_macros="1"                                    # derive
