@@ -1,9 +1,21 @@
 # ollama
-<!-- [![Crates.io](https://img.shields.io/crates/v/ollama.svg)](https://crates.io/crates/ollama) -->
-<!-- [![Docs.rs](https://docs.rs/ollama/badge.svg)](https://docs.rs/ollama) -->
-[![CI](https://github.com//ollama/workflows/CI/badge.svg)](https://github.com//ollama/actions)
+My notes using ollama. 
 
-## Installation
+## Installation and running
+```fish
+# install 
+curl https://ollama.ai/install.sh | sh
+
+# run ollama
+ollama run llama2
+# or create a model from a model file
+# ollama create mario -f ./Modelfile
+# ollama run mario
+
+# ask something
+cargo run $PROMPT
+# 
+```
 
 ### Cargo
 
